@@ -81,7 +81,6 @@
     box-shadow:0 0 8px var(--accent-glow);
   }
 
-  /* ---------- reveal on scroll ---------- */
   .reveal{
     opacity:0;
     transform:translateY(28px);
@@ -102,7 +101,6 @@
     opacity:.55;
   }
 
-  /* ================= NAV ================= */
   header.nav{
     position:fixed;
     top:0; left:0; right:0;
@@ -201,7 +199,6 @@
 
   .icon-sm{width:17px; height:17px; flex-shrink:0;}
 
-  /* ================= HERO ================= */
   .hero{
     position:relative;
     padding:190px 0 120px;
@@ -291,7 +288,6 @@
     50%{ transform:translateY(-18px) rotate(var(--r,0deg));}
   }
 
-  /* ---------- Laptop mockup ---------- */
   .device-wrap{
     position:relative;
     margin:78px auto 0;
@@ -346,7 +342,7 @@
     filter:blur(6px);
   }
 
-  /* ================= SECTION HEADERS ================= */
+
   .section{ position:relative; padding:120px 0; z-index:1;}
   .section-head{
     text-align:center;
@@ -367,7 +363,7 @@
     line-height:1.6;
   }
 
-  /* ================= FEATURES ================= */
+
   .features-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -400,7 +396,6 @@
   .feature-card h3{ font-size:17.5px; font-weight:700; margin-bottom:9px; letter-spacing:-.01em;}
   .feature-card p{ font-size:14.5px; color:var(--text-secondary); line-height:1.6;}
 
-  /* ================= HOW IT WORKS ================= */
   .steps{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -511,7 +506,6 @@
   }
   .showcase-tab:hover{ color:var(--text-primary);}
 
-  /* ================= COMPARISON ================= */
   .compare-table{
     border:1px solid var(--border-subtle);
     border-radius:var(--radius-lg);
@@ -543,7 +537,7 @@
   .compare-cell.gi{ color:var(--text-primary); background:rgba(74,144,255,.035);}
   .mark{ width:17px; height:17px; flex-shrink:0;}
 
-  /* ================= DOWNLOAD ================= */
+
   .download-card{
     max-width:760px;
     margin:0 auto;
@@ -587,7 +581,7 @@
   }
   .disclaimer svg{ flex-shrink:0; margin-top:1px; color:var(--accent-bright);}
 
-  /* ================= FAQ ================= */
+
   .faq-list{ max-width:760px; margin:0 auto;}
   .faq-item{
     border-bottom:1px solid var(--border-subtle);
@@ -618,7 +612,6 @@
   }
   .faq-a p{ padding:0 4px 24px; color:var(--text-secondary); font-size:14.5px; line-height:1.65; max-width:620px;}
 
-  /* ================= FOOTER ================= */
   footer{
     border-top:1px solid var(--border-subtle);
     padding:64px 0 36px;
@@ -644,7 +637,7 @@
     font-size:12.5px; color:var(--text-muted); font-family:var(--font-mono);
   }
 
-  /* ================= RESPONSIVE ================= */
+ 
   @media (max-width:900px){
     .features-grid{ grid-template-columns:repeat(2,1fr);}
     .steps{ grid-template-columns:repeat(2,1fr); gap:40px 0;}
@@ -1039,7 +1032,6 @@
     tabs[autoIdx].click();
   }, 5000);
 
-  // ---------- FAQ accordion ----------
   document.querySelectorAll('.faq-item').forEach(item=>{
     const q = item.querySelector('.faq-q');
     const a = item.querySelector('.faq-a');
@@ -1056,7 +1048,7 @@
     });
   });
 
-  // ---------- mobile menu (simple smooth scroll fallback) ----------
+
   document.querySelectorAll('a[href^="#"]').forEach(a=>{
     a.addEventListener('click', function(e){
       const target = document.querySelector(this.getAttribute('href'));
