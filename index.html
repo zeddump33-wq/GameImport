@@ -683,7 +683,7 @@
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-cta">
-      <span class="nav-ver">v</span>
+      <span class="nav-ver"></span>
     </div>
     <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -963,13 +963,13 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 GameVault Official. GameImporter is not affiliated with Valve or Steam.</span>
-      <span>v</span>
+      <span></span>
     </div>
   </div>
 </footer>
 
 <script>
-  // ---------- particle background ----------
+  
   const canvas = document.getElementById('particle-canvas');
   const ctx = canvas.getContext('2d');
   let w,h,particles=[];
@@ -1006,7 +1006,7 @@
   resize(); initParticles(); tick();
   window.addEventListener('resize', ()=>{ resize(); initParticles(); });
 
-  // ---------- reveal on scroll ----------
+  
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{
@@ -1015,7 +1015,7 @@
   }, { threshold:0.15 });
   revealEls.forEach(el=>io.observe(el));
 
-  // ---------- showcase tabs ----------
+  
   const tabs = document.querySelectorAll('.showcase-tab');
   const slides = document.querySelectorAll('.shot-slide');
   tabs.forEach(tab=>{
